@@ -21,12 +21,12 @@ INNER JOIN routes AS r
 ON r.route_no = f.route_no
 INNER JOIN airplanes_data AS a
 ON a.airplane_code = r.airplane_code
-WHERE a.airplane_code = '733'
+WHERE a.airplane_code = '7M7'
 
 --- 5. Escribe una consulta que te muestre la información detallada de los tickets que han comprado las personas que se llaman Irina.
 
 SELECT * FROM tickets
-WHERE passenger_name ILIKE 'Irina%'
+WHERE passenger_name ILIKE 'Irina %'
 
 --- 6. Mostrar las ciudades con más de un aeropuerto. 
 
